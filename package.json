@@ -88,7 +88,7 @@
   "scripts": {
     "postinstall": "patch-package",
     "lint": "eslint .",
-    "start": "cross-env NODE_ENV=production node app",
+    "start": "node app",
     "start-dev": "concurrently --kill-others \"nodemon app\" \"npm run build-dev\"",
     "build-dev": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
